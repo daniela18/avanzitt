@@ -24,23 +24,23 @@
 
 </head>
 <body>
-	<div class="border">
-	<nav class="container">
+	<div class="container">
+	<nav >
 		<div class="logo">
 			<figure>
 				<img src="imagenes/logo.png" alt="">
 			</figure>
 		</div>
-		<ul>
-			<li><p>Contacto</p></li>
-			<li><p>Servicios</p></li>
-			<li><p>Proyectos</p></li>
-			<li><p>Clientes</p></li>
-			<li class="bordes"><p>Productos</p></li>
-		</ul>
+		<div class="navegacion">
+			<ul>
+				<li><a>Productos</a></li>
+				<li><a>Servicios</a></li>
+				<li><a>Proyectos</a></li>
+				<li><a>Clientes</a></li>
+				<li><a>Contacto</a></li>
+			</ul>
+		</div>
 	</nav>
-	</div>
-	<section class="container">
 		<div class="row">
 		<div class="textos col-sm-6">
 			<div class="titulo">
@@ -52,37 +52,50 @@
 				</p>
 			</div>
 		</div>
-		<div id="imagen" class="imagen col-sm-6" style="position: relative; top: 0px; left: 0px; width: 530px; height: 350px;">
-			<div u="slides" style="cursor: move; position: absolute; overflow: hidden; left: 0px; top: 0px; width: 600px; height: 350px;">
+		<div id="imagen" class="imagen col-sm-6" style="position: relative; top: 0px; left: 0px; width: 567px; height: 360px;">
+			<div u="slides" style="cursor: move; position: absolute; overflow: hidden; left: 0px; top: 0px; width: 567px; height: 360px;">
 
 				<div><img u="image" src="imagenes/foto.png" alt=""></div>
 				<div><img u="image" src="imagenes/imagen.jpg" alt=""></div>
 			</div>
 		</div>
 	</div>
-	</section>
-	<div class="iconos container">
+	<div class="iconos">
 		<ul class="menu">
 			<li class="azul">
-        <i class="glyphicon glyphicon-home"></i>
-        <a href="#">Nosotros</a>
+				<div class="icon">
+        	<i class="glyphicon glyphicon-home"></i>
+        </div>
+        <div class="text-icon">
+        	<a href="#">Nosotros</a>
+        </div>
 			</li>
 		  <li class="naranjo">
-        <i class="glyphicon glyphicon-globe"></i>
-        <a href="#">Calidad</a>
+		  	<div class="icon">
+        	<i class="glyphicon glyphicon-globe"></i>
+        </div>
+        <div class="text-icon">
+        	<a href="#">Calidad</a>
+        </div>
 		  </li>
 		  <li class="amarillo">
-        <i class="glyphicon glyphicon-briefcase"></i>
-        <a href="#">Proyectos</a>
+		  	<div class="icon">
+        	<i class="glyphicon glyphicon-briefcase"></i>
+        </div>
+        <div class="text-icon">
+					<a href="#">Proyectos</a>
+				</div>
 			</li>
 		  <li class="verde">
-        <i class="icono glyphicon glyphicon-list-alt"></i>
-        <a href="#">Servicios</a>
+		  	<div class="icon">
+        	<i class="icono glyphicon glyphicon-list-alt"></i>
+        </div>
+        <div class="text-icon">
+        	<a href="#">Servicios</a>
+        </div>
 		  </li>
 		</ul>
 	</div>
-	<div class="borde">
-	<div class="container">
 		<div class="contacto">
 			<div class="d">
 				<p> Marin #0302,  Providencia, Santiago de Chile - telefono:  (562) 571 5390 - contacto@avanzit-tecnologia.cl</p>
@@ -91,9 +104,8 @@
 				<i class="glyphicon glyphicon-globe"></i>
 				<a href="#">English version</a>
 			</div>
-		</div>
 	</div>
-	</div>
+</div>
 
 </body>
 </html>   
