@@ -1,19 +1,20 @@
-@import "hover-min.css"
 
 .verde
-	border-top solid 2px #00a5a1 
+	border-top solid 3px #00a5a1 
 .azul
-	border-top solid 2px #0b4c7e
+	border-top solid 3px #0b4c7e
 .naranjo
-	border-top solid 2px #F77623
+	border-top solid 3px #F77623
  .amarillo
-	border-top solid 2px #F4C458
+	border-top solid 3px #F4C458
+.navbar-default
+	background white
+	border none
 
 body 
 	font-family 'News Cycle', sans-serif
 	color #666
 	nav
-		height 129px
 		.logo
 			float left
 			margin-left 0.9em
@@ -22,7 +23,7 @@ body
 				height 94px
 		.navegacion
 			float right
-			margin 1em 0
+			margin 2.1em 0
 			ul
 				overflow hidden
 				li 	
@@ -31,6 +32,9 @@ body
 					list-style none
 					padding 0 1em
 					border-right solid 1px #ccc
+					&:first-child
+						border-left solid 1px #ccc
+						
 					a 
 						color #666
 						margin 0
@@ -38,7 +42,6 @@ body
 						font-size 1.6em
 						text-decoration none 
 						display block
-						cursor pointer
 						-webkit-transition 0.2s ease
 						-moz-transition 0.2s ease
 						-o-transition 0.2s ease
@@ -64,7 +67,7 @@ body
 					margin 0 0 0.7em 0
 	.iconos
 		background white
-		margin-top 2em 
+		margin-top 3em 
 		.menu
 			padding 0
 			margin 0
@@ -76,6 +79,9 @@ body
 				padding 2em 0 
 				width 20.3em
 				-webkit-transition 0.2s ease
+				-moz-transition 0.2s ease
+				-o-transition 0.2s ease
+				transition 0.2s ease
 				&:hover
 					cursor pointer
 					background #1111
@@ -110,16 +116,28 @@ body
 			float right
 			i 
 				color #666
-				margin-right 0.5em
+				margin-right 0.2em
 				font-size 18px
 			a
 				color #333333
 				text-decoration none
 				font-size 20px
 				&:hover
-					color #00a5a1 
+					color #00a5a1
 
-							
+@media (max-width:1199px)  
+
+	body
+		nav
+			.navbar-header
+				float none
+			.logo
+				float none 
+			.navegacion
+				margin 0 7em
+				float none
+		
+								
 
 
 		

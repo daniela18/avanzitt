@@ -1,145 +1,37 @@
-@import "hover-min.css";
-.verde {
-  border-top: solid 2px #00a5a1;
-}
-.azul {
-  border-top: solid 2px #0b4c7e;
-}
-.naranjo {
-  border-top: solid 2px #f77623;
-}
-.amarillo {
-  border-top: solid 2px #f4c458;
-}
-body {
-  font-family: 'News Cycle', sans-serif;
-  color: #666;
-}
-body nav {
-  height: 129px;
-}
-body nav .logo {
-  float: left;
-  margin-left: 0.9em;
-  margin-top: 2em;
-}
-body nav .logo img {
-  height: 94px;
-}
-body nav .navegacion {
-  float: right;
-  margin: 1em 0;
-}
-body nav .navegacion ul {
-  overflow: hidden;
-}
-body nav .navegacion ul li {
-  margin: 1em 0 0 0;
-  float: left;
-  list-style: none;
-  padding: 0 1em;
-  border-right: solid 1px #ccc;
-}
-body nav .navegacion ul li a {
-  color: #666;
-  margin: 0;
-  padding: 0.6em 0.5em 0.7em 0.5em;
-  font-size: 1.6em;
-  text-decoration: none;
-  display: block;
-  cursor: pointer;
-  -webkit-transition: 0.2s ease;
-  -moz-transition: 0.2s ease;
-  -o-transition: 0.2s ease;
-  transition: 0.2s ease;
-}
-body nav .navegacion ul li a:hover {
-  color: #00a5a1;
-  border-bottom: solid 2px #00a5a1;
-}
-body .row {
-  margin: 1.5em 0 0 0;
-}
-body .row .imagen {
-  height: 322px;
-  overflow: hidden;
-}
-body .row .imagen img {
-  width: 96%;
-}
-body .row .textos .avanzit p {
-  font-size: 21px;
-}
-body .row .textos .titulo p {
-  font-size: 3.1em;
-  text-align: left;
-  margin: 0 0 0.7em 0;
-}
-body .iconos {
-  background: #fff;
-  margin-top: 2em;
-}
-body .iconos .menu {
-  padding: 0;
-  margin: 0;
-  overflow: hidden;
-}
-body .iconos .menu li {
-  list-style: none;
-  margin: 0;
-  float: left;
-  padding: 2em 0;
-  width: 20.3em;
-  -webkit-transition: 0.2s ease;
-}
-body .iconos .menu li:hover {
-  cursor: pointer;
-  background: rgba(17,17,17,0.067);
-}
-body .iconos .menu li .icon {
-  margin: 0 auto;
-  overflow: hidden;
-  width: 4.1em;
-}
-body .iconos .menu li .icon i {
-  color: #333;
-  font-size: 57px;
-}
-body .iconos .menu li .text-icon a {
-  color: #666;
-  display: block;
-  left: 0;
-  right: 0;
-  margin: 0;
-  text-align: center;
-  font-size: 24px;
-  text-decoration: none;
-}
-body .contacto {
-  padding: 2.1em;
-  border-top: solid 1px #ccc;
-  margin-bottom: 3em;
-}
-body .contacto .d {
-  float: left;
-}
-body .contacto .d p {
-  font-size: 22px;
-  color: #666;
-}
-body .contacto .english {
-  float: right;
-}
-body .contacto .english i {
-  color: #666;
-  margin-right: 0.5em;
-  font-size: 18px;
-}
-body .contacto .english a {
-  color: #333;
-  text-decoration: none;
-  font-size: 20px;
-}
-body .contacto .english a:hover {
-  color: #00a5a1;
+.verde{border-top:solid 3px #00a5a1}
+.azul{border-top:solid 3px #0b4c7e}
+.naranjo{border-top:solid 3px #f77623}
+.amarillo{border-top:solid 3px #f4c458}
+.navbar-default{background:#fff;border:none}
+body{font-family:'News Cycle',sans-serif;color:#666;}
+body nav .logo{float:left;margin-left:.9em;margin-top:2em;}
+body nav .logo img{height:94px}
+body nav .navegacion{float:right;margin:2.1em 0;}
+body nav .navegacion ul{overflow:hidden;}
+body nav .navegacion ul li{margin:1em 0 0 0;float:left;list-style:none;padding:0 1em;border-right:solid 1px #ccc;}
+body nav .navegacion ul li:first-child{border-left:solid 1px #ccc}
+body nav .navegacion ul li a{color:#666;margin:0;padding:.6em .5em .7em .5em;font-size:1.6em;text-decoration:none;display:block;-webkit-transition:.2s ease;-moz-transition:.2s ease;-o-transition:.2s ease;transition:.2s ease;}
+body nav .navegacion ul li a:hover{color:#00a5a1;border-bottom:solid 2px #00a5a1}
+body .row{margin:1.5em 0 0 0;}
+body .row .imagen{height:322px;overflow:hidden;}
+body .row .imagen img{width:96%}
+body .row .textos .avanzit p{font-size:21px}
+body .row .textos .titulo p{font-size:3.1em;text-align:left;margin:0 0 .7em 0}
+body .iconos{background:#fff;margin-top:3em;}
+body .iconos .menu{padding:0;margin:0;overflow:hidden;}
+body .iconos .menu li{list-style:none;margin:0;float:left;padding:2em 0;width:20.3em;-webkit-transition:.2s ease;-moz-transition:.2s ease;-o-transition:.2s ease;transition:.2s ease;}
+body .iconos .menu li:hover{cursor:pointer;background:rgba(17,17,17,0.067)}
+body .iconos .menu li .icon{margin:0 auto;overflow:hidden;width:4.1em;}
+body .iconos .menu li .icon i{color:#333;font-size:57px}
+body .iconos .menu li .text-icon a{color:#666;display:block;left:0;right:0;margin:0;text-align:center;font-size:24px;text-decoration:none}
+body .contacto{padding:2.1em;border-top:solid 1px #ccc;margin-bottom:3em;}
+body .contacto .d{float:left;}
+body .contacto .d p{font-size:22px;color:#666}
+body .contacto .english{float:right;}
+body .contacto .english i{color:#666;margin-right:.2em;font-size:18px}
+body .contacto .english a{color:#333;text-decoration:none;font-size:20px;}
+body .contacto .english a:hover{color:#00a5a1}
+@media (max-width:1199px){body nav .navbar-header{float:none}
+body nav .logo{float:none}
+body nav .navegacion{margin:0 7em;float:none}
 }

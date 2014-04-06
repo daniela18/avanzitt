@@ -8,6 +8,15 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" media="screen" href="css/avanzit2.css">
 	<script src="js/jquery.js"></script>
+	<script src="js/underscore.js"></script>
+	<script src="js/backbone.js"></script>
+	<script src="js/marionette.js"></script>
+
+	<script src="js/backbone/app.js"></script>
+	<script src="js/backbone/apps/main_region/main_region_app.js"></script>
+	<script src="js/backbone/apps/main_region/show/show_controller.js"></script>
+	<script src="js/backbone/apps/main_region/show/show_views.js"></script>
+
 	<script src="js/jssor.slider.js"></script>
 	<script src="js/jssor.core.js"></script>
 	<script src="js/jssor.util.js"></script>
@@ -17,6 +26,7 @@
 
 	<script>
     jQuery(document).ready(function ($) {
+    		Avanzit.start();
         var options = { $AutoPlay: true,$SlideDuration:1200 };
         var jssor_slider1 = new $JssorSlider$('imagen', options);
     });
@@ -25,48 +35,23 @@
 </head>
 <body>
 	<div class="container">
-	<nav class="navbar navbar-default" role="navigation">
-		<div class="navbar-header">
-   	 <button type="button" class="navbar-toggle" data-toggle="collapse"
-            		data-target=".navbar-ex1-collapse">
-      <span class="sr-only">Desplegar navegación</span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-     	<span class="icon-bar"></span>
-    	</button>
-    	<div class="logo">
-			<a href=""><img src="imagenes/logo.png" alt=""></a>
-			</div>
-  	</div>
-		<div class="navegacion collapse navbar-collapse navbar-ex1-collapse">
+	<nav >
+		<div class="logo">
+			<figure>
+				<img src="imagenes/logo.png" alt="">
+			</figure>
+		</div>
+		<div class="navegacion">
 			<ul>
-				<li><a href="#">Productos</a></li>
-				<li><a href="#">Servicios</a></li>
-				<li><a href="#">Proyectos</a></li>
-				<li><a href="#">Clientes</a></li>
-				<li><a href="#">Contacto</a></li>
+				<li><a>Productos</a></li>
+				<li><a>Servicios</a></li>
+				<li><a>Proyectos</a></li>
+				<li><a>Clientes</a></li>
+				<li><a>Contacto</a></li>
 			</ul>
 		</div>
 	</nav>
-		<div class="row">
-		<div class="textos col-lg-6">
-			<div class="titulo">
-				<p>Avanzit <strong>Tecnología</strong></p>
-			</div>
-			<div class="avanzit">
-				<p>Avánzit Tecnología se enorgullece de ser representante para Chile del siguiente catálogo de vendors internacionales, con el más alto prestigio y respaldo de calidad en cada una de sus áreas de competencia.
-				Avánzit Tecnología se enorgullece de ser representante para Chile del siguiente catálogo de vendors internacionales, con el más alto prestigio y respaldo de calidad en cada una de sus áreas de competencia.
-				</p>
-			</div>
-		</div>
-		<div id="imagen" class="imagen col-lg-6" style="position: relative; top: 0px; left: 0px; width: 567px; height: 360px;">
-			<div u="slides" style="cursor: move; position: absolute; overflow: hidden; left: 0px; top: 0px; width: 567px; height: 360px;">
-
-				<div><img u="image" src="imagenes/foto.png" alt=""></div>
-				<div><img u="image" src="imagenes/imagen.jpg" alt=""></div>
-			</div>
-		</div>
-	</div>
+		<div id="main-region"></div>
 	<div class="iconos">
 		<ul class="menu">
 			<li class="azul">
@@ -113,6 +98,7 @@
 			</div>
 	</div>
 </div>
+
 </body>
 </html>   
 
