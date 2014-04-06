@@ -40,6 +40,9 @@ body nav .navegacion ul li {
   padding: 0 1em;
   border-right: solid 1px #ccc;
 }
+body nav .navegacion ul li:first-child {
+  border-left: 1px solid #ccc;
+}
 body nav .navegacion ul li a {
   color: #666;
   margin: 0;
