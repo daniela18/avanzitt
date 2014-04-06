@@ -19,11 +19,19 @@ body
 			float left
 			margin-left 0.9em
 			margin-top 2em
+			width 22em
 			img
 				height 94px
+		.button-menu
+			display none
+			position absolute
+			top 1em
+			left 1em
+			font-size 2em
 		.navegacion
 			float right
 			margin 2.1em 0
+			width 52em
 			ul
 				overflow hidden
 				li 	
@@ -35,6 +43,7 @@ body
 					&:first-child
 						border-left 1px solid #ccc
 					a 
+						border-bottom solid 3px #fff
 						color #666
 						margin 0
 						padding 0.6em 0.5em 0.7em 0.5em
@@ -47,7 +56,7 @@ body
 						transition 0.2s ease
 						&:hover
 							color #00a5a1 
-							border-bottom solid 2px #00a5a1
+							border-color #00a5a1
 	.row
 		margin 1.5em 0 0 0 
 		.imagen
@@ -76,11 +85,13 @@ body
 				margin 0 
 				float left
 				padding 2em 0 
-				width 20.3em
+				width 24.9%
 				-webkit-transition 0.2s ease
 				-moz-transition 0.2s ease
 				-o-transition 0.2s ease
 				transition 0.2s ease
+				&:last-child
+					width 25.3%
 				&:hover
 					cursor pointer
 					background #1111
@@ -103,7 +114,7 @@ body
 						text-decoration none
 	
 	.contacto
-		padding 2.1em 
+		padding 2em 
 		border-top solid 1px #ccc
 		margin-bottom 3em
 		.d
@@ -131,12 +142,105 @@ body
 			.navbar-header
 				float none
 			.logo
-				float none 
-			.navegacion
-				margin 0 7em
 				float none
-		
-								
+				margin 0 auto 
+				padding-top 1em
 
+			.navegacion
+				margin 0 auto
+				float none
+		.row
+			.imagen
+				width 465px !important
+		.contacto
+			.d
+				p
+					font-size 17px
 
+@media (max-width:991px)  
+	body
+		.row
+			.imagen
+				margin 2em 0
+				width 350px !important	
+				img
+					height 300px !important
+					width 350px !important	
+		.contacto
+			.d
+				width 70%
+
+@media (max-width: 767px)
+	body
+		.row
+			.imagen
+				margin 0.6em auto
+				width 600px !important
+				height 395px !important	
+				img
+					display block
+					margin 0 auto
+					height 396px !important
+					width 600px !important	
+			.textos
+				.titulo
+					p
+						text-align center
+		.iconos
+			margin-top 0
+	
+		.contacto
+			.d
+				width 70%
+@media (max-width: 722px)
+	nav
+		.button-menu
+			display block !important
+		.navegacion
+			display none
+@media (max-width: 320px)
+	body
 		
+		nav
+			.button-menu
+				top 0.5em
+		#sidr
+			width 220px
+		.logo
+			float none !important
+			width 12em !important
+			img
+				height 60px !important
+		.row
+			.imagen
+				padding 0
+				margin-bottom 0.8em
+				margin-top 0
+				width 280px !important
+				height 200px !important	
+				img
+					height 240px !important
+					width 280px !important	
+			.textos
+				display none
+		.iconos
+			.menu
+				li
+					width 50%
+					&:last-child
+						width 50%
+					.icon
+						width 3.4em
+						i
+							font-size 45px
+					.text-icon
+						a
+							font-size 19px
+		.contacto
+			margin-bottom 0
+			.english
+				float none
+			.d
+				width 100%
+				float none
+

@@ -22,13 +22,22 @@ body nav .logo {
   float: left;
   margin-left: 0.9em;
   margin-top: 2em;
+  width: 22em;
 }
 body nav .logo img {
   height: 94px;
 }
+body nav .button-menu {
+  display: none;
+  position: absolute;
+  top: 1em;
+  left: 1em;
+  font-size: 2em;
+}
 body nav .navegacion {
   float: right;
   margin: 2.1em 0;
+  width: 52em;
 }
 body nav .navegacion ul {
   overflow: hidden;
@@ -44,6 +53,7 @@ body nav .navegacion ul li:first-child {
   border-left: 1px solid #ccc;
 }
 body nav .navegacion ul li a {
+  border-bottom: solid 3px #fff;
   color: #666;
   margin: 0;
   padding: 0.6em 0.5em 0.7em 0.5em;
@@ -57,7 +67,7 @@ body nav .navegacion ul li a {
 }
 body nav .navegacion ul li a:hover {
   color: #00a5a1;
-  border-bottom: solid 2px #00a5a1;
+  border-color: #00a5a1;
 }
 body .row {
   margin: 1.5em 0 0 0;
@@ -91,11 +101,14 @@ body .iconos .menu li {
   margin: 0;
   float: left;
   padding: 2em 0;
-  width: 20.3em;
+  width: 24.9%;
   -webkit-transition: 0.2s ease;
   -moz-transition: 0.2s ease;
   -o-transition: 0.2s ease;
   transition: 0.2s ease;
+}
+body .iconos .menu li:last-child {
+  width: 25.3%;
 }
 body .iconos .menu li:hover {
   cursor: pointer;
@@ -121,7 +134,7 @@ body .iconos .menu li .text-icon a {
   text-decoration: none;
 }
 body .contacto {
-  padding: 2.1em;
+  padding: 2em;
   border-top: solid 1px #ccc;
   margin-bottom: 3em;
 }
@@ -154,9 +167,114 @@ body .contacto .english a:hover {
   }
   body nav .logo {
     float: none;
+    margin: 0 auto;
+    padding-top: 1em;
   }
   body nav .navegacion {
-    margin: 0 7em;
+    margin: 0 auto;
+    float: none;
+  }
+  body .row .imagen {
+    width: 465px !important;
+  }
+  body .contacto .d p {
+    font-size: 17px;
+  }
+}
+@media (max-width:991px) {
+  body .row .imagen {
+    margin: 2em 0;
+    width: 350px !important;
+  }
+  body .row .imagen img {
+    height: 300px !important;
+    width: 350px !important;
+  }
+  body .contacto .d {
+    width: 70%;
+  }
+}
+@media (max-width: 767px) {
+  body .row .imagen {
+    margin: 0.6em auto;
+    width: 600px !important;
+    height: 395px !important;
+  }
+  body .row .imagen img {
+    display: block;
+    margin: 0 auto;
+    height: 396px !important;
+    width: 600px !important;
+  }
+  body .row .textos .titulo p {
+    text-align: center;
+  }
+  body .iconos {
+    margin-top: 0;
+  }
+  body .contacto .d {
+    width: 70%;
+  }
+}
+@media (max-width: 722px) {
+  nav .button-menu {
+    display: block !important;
+  }
+  nav .navegacion {
+    display: none;
+  }
+}
+@media (max-width: 320px) {
+  body nav .button-menu {
+    top: 0.5em;
+  }
+  body #sidr {
+    width: 220px;
+  }
+  body .logo {
+    float: none !important;
+    width: 12em !important;
+  }
+  body .logo img {
+    height: 60px !important;
+  }
+  body .row .imagen {
+    padding: 0;
+    margin-bottom: 0.8em;
+    margin-top: 0;
+    width: 280px !important;
+    height: 200px !important;
+  }
+  body .row .imagen img {
+    height: 240px !important;
+    width: 280px !important;
+  }
+  body .row .textos {
+    display: none;
+  }
+  body .iconos .menu li {
+    width: 50%;
+  }
+  body .iconos .menu li:last-child {
+    width: 50%;
+  }
+  body .iconos .menu li .icon {
+    width: 3.4em;
+  }
+  body .iconos .menu li .icon i {
+    font-size: 45px;
+  }
+  body .iconos .menu li .text-icon a {
+    font-size: 19px;
+  }
+  body .contacto {
+    margin-bottom: 0;
+  }
+  body .contacto .english {
+    float: none;
+  }
+  body .contacto .d {
+    width: 100%;
     float: none;
   }
 }
