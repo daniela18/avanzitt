@@ -30,9 +30,9 @@ body nav .logo img {
 body nav .button-menu {
   display: none;
   position: absolute;
-  top: 1em;
+  top: 0.3em;
   left: 1em;
-  font-size: 2em;
+  font-size: 3em;
 }
 body nav .navegacion {
   float: right;
@@ -41,6 +41,7 @@ body nav .navegacion {
 }
 body nav .navegacion ul {
   overflow: hidden;
+  height: 6em;
 }
 body nav .navegacion ul li {
   margin: 1em 0 0 0;
@@ -53,7 +54,7 @@ body nav .navegacion ul li:first-child {
   border-left: 1px solid #ccc;
 }
 body nav .navegacion ul li a {
-  border-bottom: solid 3px #fff;
+  border-bottom: solid 2px #fff;
   color: #666;
   margin: 0;
   padding: 0.6em 0.5em 0.7em 0.5em;
@@ -72,12 +73,9 @@ body nav .navegacion ul li a:hover {
 body .row {
   margin: 1.5em 0 0 0;
 }
-body .row .imagen {
-  height: 322px;
-  overflow: hidden;
-}
 body .row .imagen img {
-  width: 96%;
+  margin: 1em 0;
+  width: 100%;
 }
 body .row .textos .avanzit p {
   font-size: 21px;
@@ -174,24 +172,19 @@ body .contacto .english a:hover {
     margin: 0 auto;
     float: none;
   }
-  body .row .imagen {
-    width: 465px !important;
-  }
   body .contacto .d p {
     font-size: 17px;
   }
 }
 @media (max-width:991px) {
-  body .row .imagen {
-    margin: 2em 0;
-    width: 350px !important;
-  }
-  body .row .imagen img {
-    height: 300px !important;
-    width: 350px !important;
-  }
   body .contacto .d {
     width: 70%;
+  }
+  body .row .imagen img {
+    margin-top: 4em;
+  }
+  body .row .textos .avanzit p {
+    font-size: 17px;
   }
 }
 @media (max-width: 767px) {
@@ -202,16 +195,9 @@ body .contacto .english a:hover {
   body .navegacion {
     display: none;
   }
-  body .row .imagen {
-    margin: 0.6em auto;
-    width: 600px !important;
-    height: 395px !important;
-  }
   body .row .imagen img {
-    display: block;
-    margin: 0 auto;
-    height: 396px !important;
-    width: 600px !important;
+    margin-top: 1em;
+    margin-bottom: 2em;
   }
   body .row .textos .titulo p {
     text-align: center;
@@ -226,6 +212,7 @@ body .contacto .english a:hover {
 @media (max-width: 320px) {
   body nav .button-menu {
     top: 0.5em;
+    font-size: 2em;
   }
   body #sidr {
     width: 220px;
@@ -236,17 +223,6 @@ body .contacto .english a:hover {
   }
   body .logo img {
     height: 60px !important;
-  }
-  body .row .imagen {
-    padding: 0;
-    margin-bottom: 0.8em;
-    margin-top: 0;
-    width: 280px !important;
-    height: 200px !important;
-  }
-  body .row .imagen img {
-    height: 240px !important;
-    width: 280px !important;
   }
   body .row .textos {
     display: none;
